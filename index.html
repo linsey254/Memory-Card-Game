@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Memory Card Game</h1>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Attempts:</span>
+                    <span id="attempts">0</span>
+                </div>
+
+                <div class="stat">
+                    <span class="stat-label">Time:</span>
+                    <span id="timer">00.00</span>
+                </div>
+
+                <div class="stat">
+                    <span class="stat-label">Matches:</span>
+                    <span id="matches">0/8</span>
+                </div>
+            </div>
+
+            <div class="button-group">
+            <button id="pause-btn" class="pause-btn">Pause</button>
+            <button id="reset-btn" class="reset-btn">New Game</button>
+            <button id="resume-btn" class="resume-btn">Resume</button>
+            </div>
+        </header>
+
+        <div class="game-board" id="game-board"></div>
+
+        <div class="game-message" id="game-message" style="display: none;">
+            <h2>🎉Congratulations!🎉</h2>
+            <p>You've completed the game!</p>
+            <p>Attempts: <span id="final-attempts"></span></p>
+            <p>Time: <span id="final-time"></span></p>
+            <button id="play-again-btn" class="play-again-btn">Play Again</button>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
